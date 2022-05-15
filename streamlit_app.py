@@ -62,7 +62,7 @@ def get_friut_load_list():
        return my_cur.fetchall()
       
 #add a button to load the friut
-if streamnlit.button('get Fruit Load List'):
+if streamlit.button('get Fruit Load List'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
   my_data_rows = get_friut_load_list()
   streamlit.dataframe(my_data_rows)
