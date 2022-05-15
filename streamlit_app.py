@@ -45,3 +45,6 @@ streamlit.dataframe(my_data_rows)
 #Second text entry box
 fruit_choice = streamlit.text_input('What fruit would you like information about?', 'jackfruit')
 streamlit.write('Thanks for adding ', fruit_choice)
+
+#This will not work correctly, but just go with it for now
+my_cur.execute("INSERT into fruit_load_list values ('from streamlit')")
